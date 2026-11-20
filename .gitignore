@@ -13,4 +13,5 @@ dist/
 /backend/uploads/
 /frontend/android/.gradle/
 /frontend/android/app/build/
+/frontend/.local-https/
 /generate_pages.py

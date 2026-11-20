@@ -68,6 +68,8 @@ VITE_API_BASE_URL=/api
 # VITE_API_BASE_URL=https://your-backend.example.com/api
 ```
 
+For local location access on Windows, run `powershell -ExecutionPolicy Bypass -File .\scripts\setup-local-https.ps1` from the `frontend` folder once. It creates and trusts a development certificate for `localhost`; restart Vite and open `https://localhost:5173`. The local certificate and password are ignored by Git. This certificate is only trusted on this Windows account; other devices still need a publicly trusted HTTPS deployment.
+
 ### Registration and sign-in
 
 Public registration does not require email or mobile verification. Citizens receive a session immediately and can use email and password to sign in on their devices. Volunteer and Coordinator registrations require an `@sahaysetu.com` email and remain pending until approved by the Super Admin. The Super Admin creates administrator accounts manually; new administrators sign in using their administrator ID or email and temporary password, then change that password on first login.
