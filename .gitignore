@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env*
+!.env.example
+!**/.env.example
+*.log
+.DS_Store
+**/.idea/
+**/.vscode/
+/frontend/.FullName
+/backend/seed.js)
+/backend/backups/
+/backend/uploads/
+/frontend/android/.gradle/
+/frontend/android/app/build/
+/generate_pages.py

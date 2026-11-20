@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SahaySetu</string>
+    <string name="title_activity_main">SahaySetu</string>
+    <string name="package_name">com.sahaysetu.disasterresponse</string>
+    <string name="custom_url_scheme">com.sahaysetu.disasterresponse</string>
+</resources>

@@ -1,0 +1,22 @@
+{
+  "appId": "com.sahaysetu.disasterresponse",
+  "appName": "SahaySetu",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "plugins": {
+    "Geolocation": {
+      "enableHighAccuracy": true
+    },
+    "Camera": {
+      "allowEditing": true,
+      "resultType": "Uri"
+    },
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    }
+  }
+}
