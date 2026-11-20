@@ -61,11 +61,11 @@ EMAIL_FROM=SahaySetu <verify@your-verified-domain.example>
 ### Frontend — `frontend/.env`
 
 ```env
-# Point to your deployed backend API
-VITE_API_BASE_URL=http://localhost:5000/api
+# Local browser requests use Vite's /api proxy.
+VITE_API_BASE_URL=/api
 
-# For production, replace with your deployed backend URL:
-# VITE_API_BASE_URL=https://your-backend.railway.app/api
+# In production, use the HTTPS backend URL (or route /api through your HTTPS reverse proxy):
+# VITE_API_BASE_URL=https://your-backend.example.com/api
 ```
 
 ### Registration and sign-in

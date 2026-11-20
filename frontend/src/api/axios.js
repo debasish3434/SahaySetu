@@ -8,19 +8,15 @@ const getApiBaseUrl = () => {
     return 'http://127.0.0.1:5000/api';
   }
 
-  // Browser accessed through a phone or computer IP address
-  const hostname = window.location.hostname;
-
-  if (hostname !== 'localhost' && hostname !== '127.0.0.1') {
-    return `http://${hostname}:5000/api`;
-  }
-
-  // Local web development
-  const envUrl =
+  // A deployed HTTPS frontend must use its HTTPS API URL to avoid mixed content.
+  const configuredApi =
     import.meta.env.VITE_API_BASE_URL ||
     import.meta.env.VITE_API_URL;
+  if (configuredApi) return configuredApi;
 
-  return envUrl || '/api';
+  // Browser requests share the frontend origin. Vite proxies /api during
+  // development; production can route /api through its HTTPS reverse proxy.
+  return '/api';
 };
 
 
